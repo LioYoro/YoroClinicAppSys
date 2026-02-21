@@ -1,0 +1,277 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body Styling */
+body {
+  font-family: Serif, sans-serif;
+  background-image: url('background.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  image-rendering: crisp-edges;
+}
+
+/* Welcome Message Styling (Outside the box) */
+.welcome-msg {
+  font-size: 40px;
+  color: #0D2B66; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Login Container */
+.login-container {
+  background-color: #f8f8ff; 
+  padding: 20px;
+  border-radius: 5px;
+  border: black;
+  box-shadow: 0 50px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  max-width: 100%;
+}
+
+/* Header Styling (Clinic Login) */
+h2 {
+  font-family: Serif, sans-serif;
+  font-size: 25px;
+  color: Black; 
+  margin-bottom: 30px;
+  font-weight:Bold;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid blue; 
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #F9FBFF;
+  color: blue; 
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: white;
+  background-color: #EAF4F3;
+  color: black; 
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 16px;
+  background-color: #0D2B66; 
+  color: white; 
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  display: block;
+margin-bottom: 10px;
+}
+
+
+button:hover {
+  background-color: #ECAA05 ;}
+
+
+
+
+.forgot-password {
+  color: #002366; 
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.forgot-password:hover {
+  color: #FFD700; 
+}
+
+
+.forgot-password:active {
+  color: black; 
+}
+
+
+/* Fade-in Animation for Body */
+body {
+  font-family: 'Futura', sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-align: center;
+  image-rendering: crisp-edges;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+input[type="text"], input[type="password"], button[type="submit"], h2 {
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+        }
+
+/* Slide-down Animation for Login Container */
+.login-container {
+  background-color: #f8f8ff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 50px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 380px;
+  max-width: 100%;
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideDown 1s ease-in-out forwards 0.5s;
+}
+
+/* Welcome Message Animation */
+.welcome-msg {
+  font-size: 40px;
+  color: #0D2B66;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8);
+  opacity: 0;
+  animation: fadeInScale 1s ease-in-out forwards 1s;
+}
+
+/* Button Animation */
+button[type="submit"] {
+  width: 100%;
+  padding: 16px;
+  background-color: #0D2B66;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #ECAA05;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(236, 170, 5, 0.7);
+}
+
+/* Button Click Effect */
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(236, 170, 5, 0.5);
+}
+
+/* Input Fields Hover and Focus */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #F9FBFF;
+  color: blue;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: white;
+  background-color: #EAF4F3;
+  color: black;
+  transform: scale(1.02);
+}
+
+/* Forgot Password Animation */
+.forgot-password {
+  color: #002366;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.forgot-password:hover {
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

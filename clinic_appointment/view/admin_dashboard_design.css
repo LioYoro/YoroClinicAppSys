@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #002147; /* JRU Navy Blue */
+    color: #FFD700; /* JRU Gold */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card Container */
+.container {
+    background: white;
+    color: #002147;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    min-width: 300px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #FFD700; /* JRU Gold */
+    color: #002147;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: #e6c300;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Header */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 10;
+}
+
+
+
+.header .system-name, h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.header .user-role {
+    background-color: #0D2B66;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 25px;  /* Further move left */
+}
+
+/* Main Container */
+.main-container {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #f8f8ff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 50px 40px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    max-width: 100%;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 1s ease-in-out forwards 0.5s;
+}
+
+.main-container h2 {
+    font-size: 40px;
+    color: #0D2B66;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-container p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #0D2B66;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #ECAA05;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(236, 170, 5, 0.7);
+}
+
+.logout-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(236, 170, 5, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

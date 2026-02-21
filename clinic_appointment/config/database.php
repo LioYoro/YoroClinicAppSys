@@ -1,0 +1,21 @@
+<?php
+class Database {
+    private $host = "sql305.infinityfree.com";
+    private $db_name = "if0_38245583_clinic";
+    private $username = "if0_38245583"; // Change if using a hosting service
+    private $password = "f0urtun3rs"; // Change if using a hosting service
+    public $conn;
+
+    public function getConnection() {
+        $this->conn = null;
+        try {
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->conn->exec("SET time_zone = '+08:00'");
+        } catch (PDOException $exception) {
+            echo "Connection error: " . $exception->getMessage();
+        }
+        return $this->conn;
+    }
+}
+?>
